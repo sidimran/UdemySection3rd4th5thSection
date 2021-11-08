@@ -6,6 +6,7 @@ import Card from "../UI/Card";
 //This component is Stateless component or Dumb component
 const ExpenseItems = (props) => {
   return (
+    <li>
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
@@ -13,6 +14,7 @@ const ExpenseItems = (props) => {
         <div className="expense-item__price">${props.amount}</div>
       </div>
     </Card>
+    </li>
   );
 };
 
